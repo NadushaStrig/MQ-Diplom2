@@ -108,7 +108,7 @@
  text-transform: uppercase;
 }
 
- .trends-title:after {
+.trends-title:after {
   content: "";
   display: block;
   position: relative;
@@ -123,18 +123,17 @@
 .trends {
   display: flex;
   margin-top: 25px;
-  justify-content: space-between;
 }
 
 
 
 .trend {
   background-repeat: no-repeat;
-  width: 414px;
+  width: 100%;
   background-color: #eff6f1;
   align-items: flex-end;
   display: flex;
-  margin-right: 5px;
+  
   background-size: cover;
   background-position: center;
   padding-top: 135px;
@@ -157,15 +156,18 @@
 
 .first-trend {
   background-image: url(trend1.jpg);
+  margin-right: 5px;
 
 }
 
 .second-trend {
   background-image: url(trend2.jpg);
+  margin-right: 5px;
 }
 
 .third-trend { 
   background-image: url(trend3.jpg);
+  margin-right: 5px;
 }
 
 .forth-trend {
@@ -202,6 +204,7 @@
   max-width: 1200px;
   margin: 57px auto;
   justify-content: space-between;
+  padding: 0 15px 0;
 }
 
 
@@ -283,7 +286,11 @@
   font-family: open-sans;
 }
 
-.posts-text {
+.posts-text1,
+.posts-text2,
+.posts-text3,
+.posts-text4,
+.posts-text5 {
   margin-top: 40px;
   font-size: 15px;
   line-height: 1.4;
@@ -292,8 +299,12 @@
   font-family: open-sans;
 }
 
+.posts-text-third {
+  margin-top: 20px;
+}
+
 .aside {
-  max-width: 273px;
+  width: 273px;
 }
 
 .latest-posts-title {
@@ -359,6 +370,7 @@
 .search {
   display: flex;
   margin-top: 57px;
+
 }
 
 .visually-hidden {
@@ -604,6 +616,7 @@
   max-width: 1200px;
   margin: 30px auto;
   box-sizing: border-box;
+  padding: 0 15px 0;
 }
 
 .products {
@@ -616,22 +629,21 @@
 .product {
   display: flex;
   flex-direction: column;
+  
 }
 
-
 .product-pic {
-  max-width: 300px;
+  width: 100%;
+  padding: 0 20px;
+  
 }
 
 .product-img {
-  max-width: 300px;
-  background-size: cover;
   background-color: #eff6f1;
-  margin: 0 20px;
 }
 
 .product-content {
-  max-width: 340px;
+  width: 340px;
   background-color: rgba(0,0,0,0);
   outline: 3px solid #b59f5b;
   margin-top: -38px;
@@ -644,7 +656,7 @@
   font-size: 20px;
   color: #0f0d0e;
   font-weight: 700;
-  font-family: opeb-sans;
+  font-family: open-sans;
   text-transform: uppercase;
   padding-top: 30px;
 }
@@ -654,7 +666,7 @@
   font-size: 20px;
   color: #0f0d0e;
   font-weight: 700;
-  font-family: opeb-sans;
+  font-family: open-sans;
   text-transform: uppercase;
 }
 
@@ -717,7 +729,7 @@
 }
 
 .footer {
-  max-width: 1200px;
+  max-width: 1170px;
   height: 83px;
   background-color: #f4f7f6;
   margin: 60px auto;
@@ -755,15 +767,15 @@
 }
 
 .social-icon-facebook {
-  background-image: url(svg/002-facebook-logo.svg);
+  background-image: url(002-facebook-logo.svg);
 }
 
 .social-icon-instagram {
-  background-image: url(svg/005-instagram.svg);
+  background-image: url(005-instagram.svg);
 }
 
 .social-icon-tumblr {
-  background-image: url(svg/003-tumblr.svg);
+  background-image: url(003-tumblr.svg);
 }
 
 .hidden {
@@ -786,9 +798,8 @@
 }
 
 .popup {
-
   width: 100%;
-  height: 100%;
+  height: 100vh;
   box-sizing: border-box;
   padding-top: 240px;
   
@@ -799,14 +810,13 @@
   position: fixed;
   top: 0;
   left: 0;
-  display: flex;
 }
 
 
 .popup__container {
   position: relative;
   background-color: #ffffff;
-  
+  padding-top: 50px;
   margin: auto;
   width: 390px;
 }
@@ -824,7 +834,7 @@
   font-family: open-sans;
   text-align: center;
   text-transform: uppercase;
-  margin-top: 50px;
+  
 }
 
 .feedback__title:after {
@@ -1032,7 +1042,7 @@
 }
   
 .menu-burger:before {
-    top: 0;
+  top: 0;
 }
   
 .menu-burger:before, .menu-burger:after {
@@ -1077,14 +1087,45 @@
   font-size: 17px;
 } 
 
-.trend {
-  height: 247px; 
-  margin-right: 0;
-  width: calc(50% - 3px);
+.first-trend,
+.third-trend {
+  width: calc(50% - 2.5px);
+  padding-top: 90px;
+}
+
+.second-trend,
+.forth-trend {
+  width: calc(50% - 2.5px);
+  margin-right: 0px;
+}
+
+.first-trend {
+  margin-bottom: 3px;
+}
+
+
+.second-trend {
+  padding-top: 65px;
+  margin-bottom: 3px;
+}
+
+.forth-trend {
+  padding-top: 85px;
+}
+
+.trend-text {
+  padding: 35px 30px 32px;
 }
 
 .content {
-  margin: 40px 0;
+  margin: 45px 0;
+  padding: 0;
+}
+
+.posts {
+  margin-right: 35px;
+  width: 100%;
+  margin-left: 32px;
 }
 
 .post {
@@ -1093,24 +1134,25 @@
 }
 
 .post:nth-child(2n+3) {
-  margin-top: 40px;
+  margin-top: 25px;
 }
 
 .post:nth-child(even) {
-  margin: 40px auto 0;
+  margin-top: 40px;
+  margin-bottom: 0px;
 }
 .post-pic {
-  margin-left: 30px;
-  width: 392px;
+  width: 100%;
 }
 
 .posts-img {
-  width: 392px;
+  width: 100%;
 }
 
 .post-text {
-  margin-top: 10px;
-  width: 392px;
+  margin-top: 7px;
+  width: 100%;
+  margin-left: 0px;
 }
 
 .posts-name,
@@ -1121,16 +1163,22 @@
 }
 
 .posts-text-third,
-.posts-text {
+.posts-text1,
+.posts-text2,
+.posts-text4,
+.posts-text5 {
   margin-top: 30px;
 }
 
-.posts-text:nth-child(3n){
+.posts-text3 {
   margin-top: 12px;
 }
 
-.posts-text:after {
-  width: 392px;
+.posts-text1:after,
+.posts-text2:after,
+.posts-text3:after,
+.posts-text4:after {
+  width: 100%;
   height: 3px;
   background-color: #eeeeee;
   content: "";
@@ -1146,13 +1194,14 @@
 }
 
 .shop-title {
- margin-top: 20px;   
+ margin-top: 60px;   
  font-size: 18px;
 }
-  
+
 .shop {
-  margin: 0 30px;
+  padding: 0;
 }
+  
 
 .products {
   display: flex;
@@ -1160,16 +1209,34 @@
   margin: 30px 0 15px;
 } 
 
-.product {
-  margin-bottom: 25px; 
+.product:nth-child(odd) {
+  margin: 0px 15px 25px 30px;
+  width: calc(50% - 50px); 
 }
 
-.product:nth-child(3) {
-  margin-bottom: 0;
+.product:nth-child(even) {
+  margin: 0px 30px 25px 10px;
+  width: calc(50% - 50px);
 }
 
 .product-pic {
-  max-width: 292px;
+  width: 100%;
+}
+
+.product-img {
+  width: 100%;
+  display: block;
+  height: auto;
+}
+
+.product-content {
+  width: 100%;
+}
+
+.product-title,
+.product-title-link {
+  padding-top: 40px;
+  font-size: 17px;
 }
 
 .footer {
@@ -1289,13 +1356,22 @@
 } 
 
 .trend {
-  height: 247px; 
-  margin-right: 0;
+  width: 25%;
 }
 
-.trend {
-  width: calc(25% - 3px);
+.first-trend,
+.third-trend {
+  padding-top: 90px;
 }
+
+.second-trend {
+  padding-top: 65px;
+}
+
+.forth-trend {
+  padding-top: 85px;
+}
+
 
 .trend-text {
   margin: 0 10px 10px;
@@ -1304,11 +1380,18 @@
 
 .content {
   margin: 40px 0;
+  padding: 0;
+}
+
+.posts {
+  margin-right: 30px;
+  width: 100%;
+  margin-left: 30px;
 }
 
 .post {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap;  
 }
 
 .post:nth-child(2n+3) {
@@ -1316,20 +1399,20 @@
 }
 
 .post:nth-child(even) {
-  margin: 40px auto 0;
+  margin-top: 40px;
 }
 .post-pic {
-  margin-left: 30px;
-  width: 392px;
+  width: 100%;
 }
 
 .posts-img {
-  width: 392px;
+  width: 100%;
 }
 
 .post-text {
-  margin-top: 10px;
-  width: 392px;
+  margin-top: 7px;
+  width: 100%;
+  margin-left: 0px;
 }
 
 .posts-name,
@@ -1341,16 +1424,22 @@
 
 
 .posts-text-third,
-.posts-text {
+.posts-text1,
+.posts-text2,
+.posts-text4,
+.posts-text5 {
   margin-top: 30px;
 }
 
-.posts-text:nth-child(3n){
+.posts-text3 {
   margin-top: 12px;
 }
 
-.posts-text:after {
-  width: 392px;
+.posts-text1:after,
+.posts-text2:after,
+.posts-text3:after,
+.posts-text4:after {
+  width: 100%;
   height: 3px;
   background-color: #eeeeee;
   content: "";
@@ -1362,30 +1451,53 @@
 }
 
 .aside {
-  margin-right: 30px
+  margin-right: 30px;
 }
 
 .shop-title {
  margin-top: 20px;   
  font-size: 18px;
 }
-  
-.shop {
-  margin: 0 30px;
-}
 
+.shop {
+  padding: 0;
+}
+  
 .products {
   display: flex;
   flex-wrap: wrap;
   margin: 30px 0 15px;
 } 
 
-.product {
-  margin-bottom: 25px; 
+.product:nth-child(odd) {
+  margin: 0px 15px 25px 30px;
+  width: calc(50% - 50px); 
+}
+
+.product:nth-child(even) {
+  margin: 0px 30px 25px 10px;
+  width: calc(50% - 50px);
 }
 
 .product-pic {
-  max-width: 292px;
+  padding: 0 20px;
+  width: 100%;
+}
+
+.product-img {
+  width: 100%;
+  display: block;
+  height: auto;  
+}
+
+.product-content {
+  width: 100%;
+}
+
+.product-title,
+.product-title-link {
+  padding-top: 40px;
+  font-size: 17px;
 }
 
 .footer {
@@ -1509,12 +1621,25 @@
 .trend {
   margin-bottom: 3px;
   width: 100%;
-  max-height: 232px;
+}
+
+.first-trend,
+.third-trend {
+  padding-top: 90px;
+}
+
+.second-trend {
+  padding-top: 65px;
+}
+
+.forth-trend {
+  padding-top: 85px;
 }
 
 .trend-text {
   margin: 0 15px 15px;
-  padding: 30px 20px;
+  padding: 30px 20px 27px;
+  width: 100%;
 }
 
 .trend-title {
@@ -1528,6 +1653,7 @@
   margin-left: 4%;
   margin-right: 4%;
   margin-bottom: 30px;
+  padding: 0;
 }
 
 .post {
@@ -1551,7 +1677,7 @@
 .posts-name-link {
   font-size: 16px;
   line-height: 1.2;
-  margin-bottom: 18px;
+  margin-bottom: 20px;
 }
 
 .posts-name,
@@ -1569,13 +1695,25 @@
   margin-top: 3px;
 }
 
-.posts-text {
+.posts-text-third,
+.posts-text1,
+.posts-text2,
+.posts-text4,
+.posts-text5 {
   margin-top: 15px;
   font-size: 14px;
 }
 
-.posts-text:after {
-  width: 330px;
+.posts-text3 {
+  margin-top: 17px;
+}
+
+.posts-text1:after,
+.posts-text2:after,
+.posts-text3:after,
+.posts-text4:after,
+.posts-text5:after {
+  width: 100%;
   height: 3px;
   background-color: #eeeeee;
   content: "";
@@ -1588,19 +1726,23 @@
 
 .aside {
   margin-top: 40px;
-  max-width: 330px;
+  width: 100%;
 }
 
 .latest-posts-title {
-  font-size: 1rem;
+  font-size: 16px;
+}
+
+.search {
+  width: 100%; 
 }
 
 .field-search {
-  width: 282px;
+  width: 100%;
 }
 
 .field-email {
-  width: 330px;
+  width: 100%;
 }
 
 .subscribe {
@@ -1608,11 +1750,11 @@
 }
 
 .subscribe-title {
-  font-size: 1rem;
+  font-size: 16px;
 }
 
 .subscribe-button {
-  width: 330px;
+  width: 100%;
 }
 
 .tags {
@@ -1621,7 +1763,7 @@
 }
 
 .tags-title {
-  font-size: 1rem;
+  font-size: 16px;
 }
 
 .tags-title:after {
@@ -1634,7 +1776,7 @@
 
 .categories-title {
   margin-top: 25px;
-  font-size: 1rem;
+  font-size: 16px;
 }
 
 .categories-title:after {
@@ -1646,12 +1788,13 @@
 }
 
 .shop-title {
-  font-size: 1rem;
+  font-size: 16px;
 }
 
 .shop {
   margin-left: 4%;
   margin-right: 4%;
+  padding: 0;
 }
 
 .products {
@@ -1662,13 +1805,23 @@
   margin-top: 35px;
 }
 
+.product-pic {
+  width: 100%;
+}
+
+.product-img {
+  width: 100%;
+  display: block;
+  height: auto;
+}
 
 .product-title,
 .product-title-link {
   font-size: 17px;
 }
 
-.product-title {
+.product-content {
+  width: 100%;
 }
 
 .footer {
@@ -1676,16 +1829,19 @@
 }
 
 .popup {
-  padding-top: 0;
-}
-.popup__container {
-  margin: 50px auto;
-  width: 330px;
+  padding: 0 15px;
 }
 
+.popup__container {
+  margin: 50px auto;
+  max-width: 100%;
+  padding-top: 30px;
+}
+
+
 .feedback__title {
-  font-size: 1rem;
-  margin-top: 25px;
+  font-size: 16px;
+  
 }
 
 .feedback__form {
@@ -1705,11 +1861,11 @@
 }
 
 .textarea {
-  width: 280px;
+  width: 100%;
 }
 
 .feedback__button {
-  width: 280px;
+  width: 100%;
 }
 
 .popup__close {
@@ -1814,6 +1970,17 @@
 .trend {
   width: calc(50% - 3px);
   margin-right: 0;
+  
+}
+
+.first-trend,
+.third-trend,
+.forth-trend {
+  padding-top: 95px;
+}
+
+.second-trend {
+  padding-top: 65px;
 }
 
 .trend-text {
@@ -1832,6 +1999,7 @@
   margin-left: 4%;
   margin-right: 4%;
   margin-bottom: 30px;
+  padding: 0;
 }
 
 .post {
@@ -1873,13 +2041,21 @@
   margin-top: 3px;
 }
 
-.posts-text {
+.posts-text1,
+.posts-text2,
+.posts-text3,
+.posts-text4,
+.posts-text5 {
   margin-top: 15px;
-  font-size: 0.875rem;
+  font-size: 14px;
 }
 
-.posts-text:after {
-  width: 330px;
+.posts-text1:after,
+.posts-text2:after,
+.posts-text3:after,
+.posts-text4:after,
+.posts-text5:after {
+  width: 100%;
   height: 3px;
   background-color: #eeeeee;
   content: "";
@@ -1892,19 +2068,23 @@
 
 .aside {
   margin-top: 40px;
-  max-width: 330px;
+  width: 100%;
 }
 
 .latest-posts-title {
   font-size: 16px;
 }
 
+.search {
+  width: 100%; 
+}
+
 .field-search {
-  width: 282px;
+  width: 100%;
 }
 
 .field-email {
-  width: 330px;
+  width: 100%;
 }
 
 .subscribe {
@@ -1916,7 +2096,7 @@
 }
 
 .subscribe-button {
-  width: 330px;
+  width: 100%;
 }
 
 .tags {
@@ -1956,14 +2136,26 @@
 .shop {
   margin-left: 4%;
   margin-right: 4%;
+  padding: 0;
 }
 
 .products {
   flex-direction: column;
+  width: 100%;
 }
 
 .product:nth-child(1n+2) {
   margin-top: 35px;
+}
+
+.product-pic {
+  width: 100%;
+}
+
+.product-img {
+  width: 100%;
+  display: block;
+  height: auto;
 }
 
 
@@ -1972,7 +2164,8 @@
   font-size: 17px;
 }
 
-.product-title {
+.product-content {
+  width: 100%;
 }
 
 .footer {
@@ -1980,16 +2173,18 @@
 }
 
 .popup {
-  padding-top: 0;
+  padding: 0 15px;
+
 }
 .popup__container {
   margin: 50px auto;
-  width: 330px;
+  max-width: 100%;
+  padding-top: 30px;
 }
 
 .feedback__title {
-  font-size: 1rem;
-  margin-top: 25px;
+  font-size: 16px;
+  
 }
 
 .feedback__form {
@@ -2009,11 +2204,11 @@
 }
 
 .textarea {
-  width: 280px;
+  width: 100%;
 }
 
 .feedback__button {
-  width: 280px;
+  width: 100%;
 }
 
 .popup__close {
